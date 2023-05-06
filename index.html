@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<body>
+    <style>body {
+        line-height: 1;
+        color: black;
+        background: black;
+        font-family: Lucida Grande, trebuchet ms, verdana, arial, helvetica, sans-serif;
+    }
+    
+    #viewport {
+        overflow: hidden;
+        width: 100%;
+        display: block;
+    }
+    
+    #viewport.mobile {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    #viewport.tablet {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    #viewport.desktop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    
+    #content {
+        position: absolute;
+        width: 550px;
+        height: 430px;
+        left: 50%;
+        top: 100px;
+        margin-left: -275px;
+    }
+    
+    canvas {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+    }
+    </style>
+    <div id="viewport">
+        <div id="content">
+            <div id="game">
+                <canvas id="slots" width="550" height="430"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
